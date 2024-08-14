@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Robert Kica">
+    <title>proj Kica -jsBs</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet">
+    <!-- Custom CSS style for site -->
+    <link href="../MainStyle.css" rel="stylesheet">
+
+    <!-- load jQuery -->
+    <script src = "https://code.jquery.com/jquery.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+<!-- load header  -->
+<script>
+    $(function(){
+        $("#page-top-header").load("../components/header/header.html");
+    });
+</script>
+
+<div id="page-top-header">
+</div>
+<main class="container">
+
+
+    <div class="row g-1">
+
+        <div class="col-md-8">
+
+        <div class="col border-bottom ">
+        <h3 class="">
+            Click on the button to reveal stats:
+        </h3>
+
+</div>
+        <button type="button" id="showAsyncBtn" class="col">Show stats</button>
+
+
+            <table  id="demo" class="table">
+
+            </table >
+        </div>
+
+
+        <script src="xml.js"></script>
+
+
+        <script>$(document).ready(function () { $("#site-sidebar").load("../components/sidebar/sidebar.html")}); </script>
+        <div id="site-sidebar" class="col-md-4" style="margin-top:  50px; top: inherit">
+        </div>
+    </div>
+
+</main>
+
+<!-- load footer  -->
+ <script>$(document).ready(function () { $("#site-footer").load("../components/footer/footer.html").css("../blog/footer/blog.css") });
+ </script>
+
+
+<div id="site-footer">
+</div>
+
+</body>
+</html>

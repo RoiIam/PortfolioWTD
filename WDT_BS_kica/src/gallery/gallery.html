@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Robert Kica">
+	<title>Gallery projekt Kica</title>
+
+
+	<!-- Bootstrap core CSS -->
+	<link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet">
+	<link href="../MainStyle.css" rel="stylesheet">
+	<script src = "gallery.js"></script>
+	<!-- init jquerry -->
+	<script src = "https://code.jquery.com/jquery.js"></script>
+
+</head>
+<body >
+
+
+<script>
+	$(function(){
+		$("#page-top-header").load("../components/header/header.html");
+	});
+</script>
+
+<div id="page-top-header">
+</div>
+
+
+<main class="container">
+	<div id = "thumbnails">
+	<img class = "preview-gallery" alt = "Ake krasne" src = "photos/01.jpg" onmousedown="fixPos()" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview-gallery" alt = "wooow" src = "photos/02.jpg" onmousedown="fixPos()" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview-gallery" alt = "nice" src = "photos/03.jpg" onmousedown="fixPos()" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	</div>
+
+	<div class ="imgDesc"  id="imgDesc">
+		description
+	</div>
+	<div class = "image-gallery" id ="image-gallery" title = "Click on a thumbnail to minimalize.">
+		hover over an image to enlarge it.
+		press mousebutton on the thumbnail to keep it enlarged.
+		<img id="imgBig" src="" >
+
+	</div>
+</main>
+
+</body>
+</html>

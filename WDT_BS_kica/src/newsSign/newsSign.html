@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Robert Kica">
+    <title>proj Kica -jsBs</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet">
+    <!-- Custom CSS style for site -->
+    <link href="../MainStyle.css" rel="stylesheet">
+
+    <!-- load jQuery -->
+    <script src = "https://code.jquery.com/jquery.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+<!-- load header  -->
+<script>
+    $(function(){
+        $("#page-top-header").load("../components/header/header.html");
+    });
+</script>
+
+<div id="page-top-header">
+</div>
+<main class="container">
+
+
+    <div class="row g-1">
+
+    <div class="col-md-8">
+
+
+
+
+        <h1>Sign Up</h1>
+
+
+
+            <form action="newsSign.html" method="post" id="signup" class="row flex-fill">
+                <p>Thanks for your interest in the blog newsletter, please fill this form:
+                </p>
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input class="" type="text" id="name" name="name" placeholder="Enter your name" />
+                    <br>
+                    <small class="small"></small>
+                </div>
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input  class="" type="text" id="email" name="email" placeholder="Enter your email" />
+                    <br>
+                    <small class="small"></small>
+                </div>
+                <div class="field">
+
+                    <p> Choose your favourite topic: </p>
+                    <!-- add hidden radio to hide outline color decorator -->
+                    <input type="radio" id="favourite" class="visually-hidden"  name="" value="">
+
+                    <input type="radio"  name="favourites" value="Engine Programming">Engine Programming<br>
+                    <input type="radio"  name="favourites" value="Game Programming">Game Programming<br>
+                    <input type="radio"  name="favourites" value="Models">Models Section<br>
+                    <small class="small"></small>
+                </div>
+                <div class="field">
+                    <button type="submit" class="full">Subscribe</button>
+                </div>
+
+            </form>
+            <script src="signTest.js"></script>
+
+
+</div>
+
+        <script>$(document).ready(function () { $("#site-sidebar").load("../components/sidebar/sidebar.html")}); </script>
+        <div id="site-sidebar" class="col-md-4" style="margin-top:  50px; top: inherit">
+        </div>
+    </div>
+
+</main>
+
+<!-- load footer  -->
+ <script>$(document).ready(function () { $("#site-footer").load("../components/footer/footer.html").css("../blog/footer/blog.css") });
+ </script>
+
+
+<div id="site-footer">
+</div>
+
+</body>
+</html>

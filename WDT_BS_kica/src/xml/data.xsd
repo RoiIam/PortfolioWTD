@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="stringtype">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="dectype">
+        <xs:restriction base="xs:decimal"/>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="genres">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FPS" />
+            <xs:enumeration value="Adventure" />
+            <xs:enumeration value="Racing" />
+            <xs:enumeration value="Simulation" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="genre">
+        <xs:sequence>
+        <xs:element name="genre1" maxOccurs="unbounded" type="genres"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="gameType">
+        <xs:sequence>
+            <xs:element name="title" type="stringtype"/>
+            <xs:element name="url" type="stringtype"/>
+            <xs:element name="price" type="dectype"/>
+            <xs:element name="genre" maxOccurs="1" type="genre"/>
+            <xs:element name="note" type="stringtype" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="wishlistType">
+        <xs:sequence>
+            <xs:element name="username" type="stringtype"/>
+            <xs:element name="userLink" type="stringtype"/>
+            <xs:element name="game" maxOccurs="unbounded" type="gameType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="dataType">
+        <xs:sequence>
+            <xs:element name="userWishlist" maxOccurs="5" type="wishlistType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="data" type="dataType"/>
+
+</xs:schema>

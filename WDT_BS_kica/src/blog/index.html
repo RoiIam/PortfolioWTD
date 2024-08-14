@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Robert Kica">
+    <title>Blog Kica -jsBs</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+    <!-- Custom styles https://www.webfx.com/blog/web-design/google-font-api-guide/ -->
+    <!--  https://developers.google.com/fonts/docs/css2 -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet">
+    <!-- Custom CSS style for site -->
+    <link href="../MainStyle.css" rel="stylesheet">
+
+  </head>
+
+
+
+
+  <body>
+
+
+  <!-- init jquerry -->
+  <script src = "https://code.jquery.com/jquery.js"></script>
+
+<!-- Add header using jquerry or cdn -->
+
+
+  <!-- Add navbar using jquerry or cdn -->
+  <!-- actually use just a header script>
+    $(function(){
+      $("#page-top-navbar").load("../components/nav/navigation.html");
+    });
+  </script -->
+
+<script>
+  $(function(){
+    $("#page-top-header").load("../components/header/header.html");
+  });
+</script>
+
+<div id="page-top-header">
+</div>
+  <div id="page-top-navbar">
+  </div>
+
+
+
+<main class="container">
+
+  <div class="col d-flex ">
+    <h3 class="pb-4 mb-4 fst-italic border-bottom text-center">
+      Browse the blog!
+    </h3>
+    <div class="col d-flex justify-content-end align-items-center">
+
+      <a class="btn btn-lg btn-outline-secondary" href="../newsSign/newsSign.html">Sign up for newsletter</a>
+    </div>
+    </div>
+
+  <div class="row g-5 " >
+    <div class="col-md-8">
+      <article class="blog-post border-bottom">
+        <div class="row">
+        <h2 class="blog-post-title">Videogame graphics part 1: Basics, Bachelors thesis</h2>
+        <p class="blog-post-meta">March 19, 2022 by <a href="#">Robert</a></p>
+        <div class ="col">
+          <img class="img-post" alt="" width="400" height="300"  src = "images/OGRL_image.png" >
+          <p> </p>
+        </div>
+        <div class ="col">
+
+        <p  class="text-justify">Video games are interesting medium. It can be viewed from multiple points like entertainment, educational, business but also ...</p>
+        <p class="lead mb-0 "><a href="post1.html" class="text-dark fw-bold">Continue reading...</a></p>
+
+        </div>
+
+        </div>
+      </article>
+
+      <article class="blog-post border-bottom">
+        <div class="row">
+          <h2 class="blog-post-title">An open world simulator experiment</h2>
+          <p class="blog-post-meta">Feb 14, 2022 by <a href="#">Robert</a></p>
+          <div class ="col">
+            <img class="img-post" alt="" width="400" height="225"  src = "images/ezgif.com-gif-makerGF01.gif" >
+            <p> </p>
+          </div>
+          <div class ="col">
+
+            <p  class="text-justify">During the last winter break, I found out about a game called Mon Bazou. The game is nowhere near complete has but already gained...</p>
+            <p class="lead mb-0 "><a href="post2.html" class="text-dark fw-bold">Continue reading...</a></p>
+
+          </div>
+
+        </div>
+      </article>
+
+
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </nav>
+    </div>
+
+  <!-- Sidebar --->
+    <script>$(document).ready(function () { $("#site-sidebar").load("../components/sidebar/sidebar.html")}); </script>
+    <div id="site-sidebar" class="col-md-4" style="margin-top: 50px ">
+    </div>
+
+
+  </div>
+
+</main>
+
+<!-- load footer  -->
+<script>
+  $(function(){
+    $("#page-footer").load("../components/footer/footer.html");
+  });
+</script>
+
+<div id="page-footer">
+</div>
+
+    
+  </body>
+</html>

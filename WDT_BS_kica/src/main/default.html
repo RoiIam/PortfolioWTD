@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Robert Kica">
+    <title>proj Kica -jsBs</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet">
+    <!-- Custom CSS style for site -->
+    <link href="../MainStyle.css" rel="stylesheet">
+
+    <!-- load jQuery -->
+    <script src = "https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+<!-- load header  -->
+<script>
+    $(function(){
+        $("#page-top-header").load("../components/header/header.html");
+    });
+</script>
+
+<div id="page-top-header">
+</div>
+<main class="container">
+
+
+    <div class="row g-1">
+
+    <div class="col-md-8">
+        <h3 class="pb-4 mb-4 fst-italic border-bottom text-center">
+            Welcome to my personal site!
+        </h3>
+
+        <article class="blog-post">
+            <h2 class="post-other-title">About me</h2>
+
+
+            <p>I'm 23 years old university student with passion for games. Making games has become hobby for me.
+                Since my teens I have been learning about game development. I tried modelling, programming, even designing games.
+            <p>
+                I started watching interesting videos related to game development, like Mark Brown's GMT series, reading game development
+                books and learning the tools of the trade. I never finished most of my projects, I always scrapped the previous one and begun
+                working on new one taking with me what I learned from the previous one.</p>
+            <h3>SOČ</h3>
+            <p>My first project that people could look at was my SOČ work I did back in 2017 in about 3 months.
+                However, my heavy concentration on the theoretical part led to "unappealing" visuals:). Judge for yourself. PDF, standalone game.</p>
+            <h3>My skills</h3>
+            <p> While learning about game development, I realized that learning everything and mastering everything would not be an easy task.
+                Thus, I oriented more towards programming game mechanics and graphics and sometimes modelling in Blender in my spare time.</p>
+            </article>
+
+</div>
+
+        <script>$(document).ready(function () { $("#site-sidebar").load("../components/sidebar/sidebar.html")}); </script>
+        <div id="site-sidebar" class="col-md-4" style="margin-top:  50px; top: inherit">
+        </div>
+    </div>
+
+</main>
+
+<!-- load footer  -->
+ <script>$(document).ready(function () { $("#site-footer").load("../components/footer/footer.html").css("../blog/footer/blog.css") });
+ </script>
+
+
+<div id="site-footer">
+</div>
+
+</body>
+</html>
